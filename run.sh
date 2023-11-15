@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-    response=$(curl -k -f https://www.pilotdog.tech/api/get_eligible_proof?address=0x9d1be716e14099E64Ca97b23Ce28Eb3D3c735d69 2>&1)
+    response=$(curl -k -f https://www.pilotdog.tech/api/get_eligible_proof?address=0x90ac69E69c585ED56Ea87cDc3Bdc59DA512f3C03 2>&1)
     if [[ $response == *"502 Bad Gateway"* ]]; then
         echo "Received Bad Gateway error. Retrying in 60 seconds..."
         sleep 60
